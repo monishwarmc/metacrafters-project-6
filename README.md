@@ -1,7 +1,7 @@
 # metacrafters-project-6
 A metacrafters solana course project
 
-# I added the config.json file also in the this root folder for your convinience 
+### I have also added the config.json file in the this root folder for your convinience
 ## SPL TOKEN
 
 Token address : ```EPjUSYcivY4tHGDpviWWmys8LhrwuQAa8oFRcsMxW2Ea```
