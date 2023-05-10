@@ -11,7 +11,7 @@ const fromPub = new PublicKey("5YC16eJ5fJytemM5kk7k4cK49N6VV4nvXYe8YwFpspkE");
 const toPub = new PublicKey("9kh1Zfb5zERicrsrYS6QtqeS216Pu9u2vxTviYy6fSdr");
 console.log("token");
 
-
+``
 const mint = await createMint(connection, from, fromPub, null, 9);
 const fromToken = await getOrCreateAssociatedTokenAccount(connection, from, mint, fromPub)
 console.log("fromToken address", fromToken.address);
@@ -23,4 +23,8 @@ const toToken = await getOrCreateAssociatedTokenAccount(connection, from, mint, 
 console.log("toToken address", toToken.address);
 sign = await transfer(connection, from, fromToken.address, toToken.address, fromPub, 1000000000, []);
 console.log("token transfer :", sign);
+
+
+sign = await mintTo(connection, from, mint, fromToken.address, fromPub, 9000000000, []);
+console.log("tx mint to fromTok :", sign);
 })();
