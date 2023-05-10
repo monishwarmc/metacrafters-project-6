@@ -21,6 +21,7 @@ ts-node ./src/candy-machine-v2-cli.ts upload
             ./assets
 ```
 
+
 ### ERROR
 
 ```
